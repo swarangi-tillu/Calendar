@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>CALENDAR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div style="display:flex; align-items:center; gap:10px;">
+    <button id="prev">Prev</button>
+    <span id="monthYear"></span>
+    
+    <button id="next">Next</button>
+</div>
+
+<div class="container">
+    <div class="day">Sunday</div>
+    <div class="day">Monday</div>
+    <div class="day">Tuesday</div>
+    <div class="day">Wednesday</div>
+    <div class="day">Thursday</div>
+    <div class="day">Friday</div>
+    <div class="day">Saturday</div>
+
+    <div class="dates"></div>
+</div>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+
+        <span id="closeBtn">&times;</span>
+
+        <h3 id="selectedDate"></h3>
+
+        <input type="text" id="eventInput" placeholder="Add event">
+
+        <button id="saveBtn">Save</button>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
